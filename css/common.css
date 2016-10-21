@@ -1,0 +1,106 @@
+@charset "utf-8";
+/* common.css@InariFox */
+/* Webフォント指定 */
+@font-face {	/* Firefox, Opera, Safari */
+    font-family: anzu;
+    src:url('../fonts/anzu.eot') format('oldIE'),
+        url('../fonts/anzu.woff') format('woff'),
+        url('../fonts/anzu.ttf') format('truetype');
+}
+
+/* 全体設定 */
+body{
+    font-family:'anzu';
+    background-color: #fcf5f7;
+}
+
+/* == ここからナビバー == */
+/* ナビバー全体の設定 */
+nav.navbar{
+    background-color: rgba(217, 151, 47, 0.8);
+    border-color: rgba(217, 151, 47, 1);
+}
+
+/* ロゴテキスト */
+a.navbar-brand{
+    font-size: 160%;
+    color: white !important;
+}
+a.navbar-brand:first-letter{
+    color: #Ba2636 !important;
+}
+
+/* ナビバーの項目 */
+ul.nav > li > a{
+    font-size: 150%;
+    color: white !important;
+}
+ul.nav > li > a:hover,
+ul.nav > li > a.dropdown-toggle:focus{
+    background-color: rgba(217, 151, 47, 1) !important;
+}
+
+/* never.less殺すべし */
+.navbar-right{
+    margin-right: 0px;
+}
+
+/* == ここまでナビバー == */
+
+/* == ここからコンテンツ == */
+.row{
+    font-size: 150%;
+}
+
+.row > ul > li > a{
+    color: black;
+}
+.row > ul > li > a:hover{
+    color: #Ba2636;
+    text-decoration: none;
+}
+
+.row > *:first-letter,
+.row > ul > li:first-letter{
+    color: #Ba2636;
+}
+
+.row > *:not(h1){
+    padding-left: 10px;
+}
+
+.liststyle-none,
+.liststyle-shrine{
+    list-style-type: none;
+}
+.liststyle-shrine > li:before{
+    content:"⛩ " ;
+}
+
+.image-radius{
+    width: 100%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+
+}
+.image-shadow{
+    margin-top: 5px;
+    display: inline-block; 
+    box-shadow: 0px 5px 15px -5px rgba(0, 0, 0, 0.8);
+}
+
+/* == ここからフッター == */
+.footer{
+    background-color: rgba(217, 151, 47, 0.8);
+    text-align: center;
+}
+
+.footer-text{
+    font-size: 110%;
+    color: white;
+}
+.footer-text:after{
+    color: #Ba2636;
+    content:" ⛩" ;
+}
