@@ -10,7 +10,7 @@
 
 /* 全体設定 */
 body{
-    font-family:'anzu';
+    font-family:'anzu' !important;
     background-color: #fcf5f7;
 }
 
@@ -22,11 +22,12 @@ nav.navbar{
 }
 
 /* ロゴテキスト */
-a.navbar-brand{
+a.header-text,
+a.footer-text{
     font-size: 160%;
     color: white !important;
 }
-a.navbar-brand:first-letter{
+a.header-text:first-letter{
     color: #Ba2636 !important;
 }
 
@@ -48,24 +49,29 @@ ul.nav > li > a.dropdown-toggle:focus{
 /* == ここまでナビバー == */
 
 /* == ここからコンテンツ == */
-.row{
+.container{
     font-size: 150%;
+    max-width: 950px;
+    margin:0 auto;
 }
 
-.row > ul > li > a{
+.container > ul > li > a,
+ul.liststyle-shrine > li > a{
     color: black;
 }
-.row > ul > li > a:hover{
+.container > ul > li > a:hover,
+ul.liststyle-shrine > li > a:hover{
     color: #Ba2636;
     text-decoration: none;
 }
 
-.row > *:first-letter,
-.row > ul > li:first-letter{
+.container > *:first-letter,
+.container > ul > li:first-letter,
+ul.liststyle-shrine > li:first-letter{
     color: #Ba2636;
 }
 
-.row > *:not(h1){
+.container > *:not(h1){
     padding-left: 10px;
 }
 
@@ -78,15 +84,12 @@ ul.nav > li > a.dropdown-toggle:focus{
 }
 
 .image-radius{
-    width: 100%;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
 
 }
 .image-shadow{
-    margin-top: 5px;
-    display: inline-block; 
     box-shadow: 0px 5px 15px -5px rgba(0, 0, 0, 0.8);
 }
 
