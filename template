@@ -4,9 +4,16 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="description" content="にわかIT系の暇つぶしで更新するサイトです。" />
+		<meta name="description" content="にわかIT系が暇つぶしで更新するサイトです。" />
 		<meta name="author" content="Anzu Design(Project cerasus)" />
 		<meta name="theme-color" content="#d9972f">
+		
+		<meta property="og:title" content="いなりこんこん | にわかIT系の暇つぶし。">
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="https://inarifox.github.io/">
+		<meta property="og:image" content="https://inarifox.github.io/img/inari.png">
+		<meta property="og:description" content="にわかIT系が暇つぶしで更新するサイトです。">
+		
 		<title>いなりこんこん</title>
 		<!-- favion -->
 		<link href="./favicon.ico" rel="shortcut icon" />
